@@ -79,6 +79,13 @@
             <scope>runtime</scope>
         </dependency>
         
+        <!-- Driver JDBC para conectar con base de datos PostgreSQL -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
         <!-- Spring Security para autenticación y autorización -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
