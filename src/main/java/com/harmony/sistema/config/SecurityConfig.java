@@ -25,6 +25,7 @@ public class SecurityConfig {
     private static final String[] PUBLIC_ROUTES = {
             "/", "/acerca", "/profesores", "/inscripcion", "/talleres",
             "/blog", "/pago", "/contacto/**", "/confirmacion",
+            "/taller/**", "/profesor/**",
             "/css/**", "/js/**", "/images/**", "/media/**",
             "/*.js", "/*.css", "/*.html", "/*.ico", "/*.json", "/*.txt",
             "/*.jpg", "/*.png", "/chunk-*.js", "/main-*.js", "/polyfills-*.js",
