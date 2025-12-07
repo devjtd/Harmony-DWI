@@ -64,19 +64,19 @@ public class DataInitializer implements CommandLineRunner {
 
                 // Inicializa profesores
                 Profesor juanPerez = initializeProfesor("Juan Perez", "987654321", profesorRole,
-                                "/images/profesorPiano.jpg",
+                                "images/profesorPiano.jpg",
                                 "\"La música es el lenguaje universal que conecta corazones. Enseñar piano no es solo transmitir técnica, es despertar la pasión por crear melodías que expresan lo que las palabras no pueden. Cada alumno es único y mi misión es ayudarles a descubrir su propia voz musical.\"");
 
                 Profesor pedroSanchez = initializeProfesor("Pedro Sanchez", "987654322", profesorRole,
-                                "/images/profesorGuitarra.jpg",
+                                "images/profesorGuitarra.jpg",
                                 "\"La guitarra fue mi refugio en momentos difíciles y quiero que mis alumnos experimenten ese mismo poder transformador. Me apasiona ver cómo cada estudiante encuentra su estilo propio y se emociona al tocar su primera canción completa. Enseñar es compartir esa magia.\"");
 
                 Profesor sofiaLopez = initializeProfesor("Sofia Lopez", "987654323", profesorRole,
-                                "/images/profesorViolin.jpg",
+                                "images/profesorViolin.jpg",
                                 "\"El violín exige disciplina, pero también sensibilidad. Me fascina guiar a mis alumnos en ese balance perfecto entre técnica y emoción. Ver cómo dominan un pasaje difícil o logran expresar sentimientos a través del arco es lo que me motiva cada día a ser mejor profesora.\"");
 
                 Profesor jeremyAgurto = initializeProfesor("Jeremy Agurto", "987654324", profesorRole,
-                                "/images/profesorFlauta.jpg",
+                                "images/profesorFlauta.jpg",
                                 "\"La flauta tiene una dulzura especial que llega al alma. Me apasiona enseñar este instrumento porque permite expresar emociones con una delicadeza única. Ver a mis alumnos disfrutar del proceso y conquistar cada melodía es mi mayor satisfacción como profesor.\"");
 
                 System.out.println("[INFO] [DATA] Profesores inicializados/verificados.");
@@ -87,8 +87,8 @@ public class DataInitializer implements CommandLineRunner {
                                 "Aprende las bases del piano desde cero en un curso diseñado para principiantes que desean familiarizarse con el instrumento y desarrollar coordinación, lectura musical y ejecución de melodías sencillas.",
                                 12,
                                 2,
-                                "/images/tallerPiano.jpg",
-                                "/images/piano.jpg",
+                                "images/tallerPiano.jpg",
+                                "images/piano.jpg",
                                 "Postura y digitación, Lectura de notas y ritmos básicos, Acordes mayores y menores, Interpretación de canciones sencillas, Escalas principales y arpegios.",
                                 new BigDecimal("500.00"));
 
@@ -97,8 +97,8 @@ public class DataInitializer implements CommandLineRunner {
                                 "Descubre los fundamentos de la guitarra acústica o eléctrica en un taller pensado para principiantes que buscan aprender acordes básicos, rasgueo, afinación y sus primeras canciones.",
                                 16,
                                 3,
-                                "/images/tallerGuitarra.jpg",
-                                "/images/guitarra.jpg",
+                                "images/tallerGuitarra.jpg",
+                                "images/guitarra.jpg",
                                 "Afinación y postura, Acordes básicos (mayores/menores/séptima), Técnicas de rasgueo y ritmo, Lectura de tablaturas, Progresiones de acordes, Repertorio popular.",
                                 new BigDecimal("450.00"));
 
@@ -107,8 +107,8 @@ public class DataInitializer implements CommandLineRunner {
                                 "Iníciate en el mundo del violín aprendiendo la postura correcta, el uso del arco, la afinación y la ejecución de escalas y melodías simples ideales para principiantes.",
                                 20,
                                 2,
-                                "/images/tallerViolin.jpg",
-                                "/images/violin.jpg",
+                                "images/tallerViolin.jpg",
+                                "images/violin.jpg",
                                 "Nociones básicas y agarre del arco, Posición del violín y dedos, Producción de sonido, Primeras escalas y melodías, Ejercicios de ritmo y afinación.",
                                 new BigDecimal("600.00"));
 
@@ -117,8 +117,8 @@ public class DataInitializer implements CommandLineRunner {
                                 "Comienza tu formación musical con la flauta aprendiendo respiración, digitación y lectura básica de partituras en un curso ideal para quienes tocan por primera vez.",
                                 12,
                                 3,
-                                "/images/tallerFlauta.jpg",
-                                "/images/flauta.jpg",
+                                "images/tallerFlauta.jpg",
+                                "images/flauta.jpg",
                                 "Embocadura correcta y respiración, Digitaciones de notas, Lectura de partituras, Escalas mayores, Interpretación de piezas sencillas.",
                                 new BigDecimal("350.00"));
 
