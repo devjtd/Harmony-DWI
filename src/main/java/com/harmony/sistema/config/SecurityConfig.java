@@ -24,7 +24,11 @@ public class SecurityConfig {
 
     private static final String[] PUBLIC_ROUTES = {
             "/", "/acerca", "/profesores", "/inscripcion", "/talleres",
-            "/blog", "/pago", "/contacto/**", "/confirmacion", "/css/**", "/js/**", "/images/**",
+            "/blog", "/pago", "/contacto/**", "/confirmacion",
+            "/css/**", "/js/**", "/images/**", "/media/**",
+            "/*.js", "/*.css", "/*.html", "/*.ico", "/*.json", "/*.txt",
+            "/*.jpg", "/*.png", "/chunk-*.js", "/main-*.js", "/polyfills-*.js",
+            "/scripts-*.js", "/styles-*.css"
     };
 
     // Configura la cadena de filtros de seguridad HTTP
