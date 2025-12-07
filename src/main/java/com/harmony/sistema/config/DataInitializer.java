@@ -64,19 +64,19 @@ public class DataInitializer implements CommandLineRunner {
 
                 // Inicializa profesores
                 Profesor juanPerez = initializeProfesor("Juan Perez", "987654321", profesorRole,
-                                "images/profesorPiano.jpg",
+                                "profesorPiano.jpg",
                                 "\"La música es el lenguaje universal que conecta corazones. Enseñar piano no es solo transmitir técnica, es despertar la pasión por crear melodías que expresan lo que las palabras no pueden. Cada alumno es único y mi misión es ayudarles a descubrir su propia voz musical.\"");
 
                 Profesor pedroSanchez = initializeProfesor("Pedro Sanchez", "987654322", profesorRole,
-                                "images/profesorGuitarra.jpg",
+                                "profesorGuitarra.jpg",
                                 "\"La guitarra fue mi refugio en momentos difíciles y quiero que mis alumnos experimenten ese mismo poder transformador. Me apasiona ver cómo cada estudiante encuentra su estilo propio y se emociona al tocar su primera canción completa. Enseñar es compartir esa magia.\"");
 
                 Profesor sofiaLopez = initializeProfesor("Sofia Lopez", "987654323", profesorRole,
-                                "images/profesorViolin.jpg",
+                                "profesorViolin.jpg",
                                 "\"El violín exige disciplina, pero también sensibilidad. Me fascina guiar a mis alumnos en ese balance perfecto entre técnica y emoción. Ver cómo dominan un pasaje difícil o logran expresar sentimientos a través del arco es lo que me motiva cada día a ser mejor profesora.\"");
 
                 Profesor jeremyAgurto = initializeProfesor("Jeremy Agurto", "987654324", profesorRole,
-                                "images/profesorFlauta.jpg",
+                                "profesorFlauta.jpg",
                                 "\"La flauta tiene una dulzura especial que llega al alma. Me apasiona enseñar este instrumento porque permite expresar emociones con una delicadeza única. Ver a mis alumnos disfrutar del proceso y conquistar cada melodía es mi mayor satisfacción como profesor.\"");
 
                 System.out.println("[INFO] [DATA] Profesores inicializados/verificados.");
