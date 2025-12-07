@@ -47,22 +47,25 @@ public class SecurityConfig {
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
 
-                // Configura login y logout
-                .formLogin(form -> form
-                        .loginPage("/login")
-                        .successHandler(mySuccessHandler())
-                        .usernameParameter("email")
-                        .passwordParameter("password")
-                        .permitAll())
+                // Deshabilita formLogin para REST API - usa JWT en su lugar
+                // .formLogin(form -> form
+                // .loginPage("/login")
+                // .successHandler(mySuccessHandler())
+                // .usernameParameter("email")
+                // .passwordParameter("password")
+                // .permitAll())
+
+                // Configura manejo de excepciones para REST API
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint((request, response, authException) -> {
+                            response.sendError(401, "Unauthorized");
+                        }))
+
                 .logout(logout -> logout.permitAll())
 
-                // Configura gestión de sesiones
+                // Configura gestión de sesiones para REST API
                 .sessionManagement(session -> session
-                        .sessionFixation(sessioFixation -> sessioFixation.newSession())
-                        .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
-                        .invalidSessionUrl("/login")
-                        .maximumSessions(1)
-                        .expiredUrl("/login"));
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
     }
